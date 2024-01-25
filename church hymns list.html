@@ -1,0 +1,93 @@
+<!DOCTYPE Html>
+    <html>
+    <head>
+        <title>church Hymms</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+         crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="church list .css">
+    </head>
+    <body>
+
+
+            <div class="container">
+    <img src="music.jpg">
+    <div class="search"><input type="text" id="searchInput" placeholder="Index..." >
+            <i class="fa-brands fa-searchengin fa-bounce" style="color: navy; font-size: larger;"></i>
+            </div>
+            </div>
+    <div><ul id="myList">
+<li><a href="hymn 1.html"><p><h4>1.TO GOD BE THE GLORY </h4></p></a></li>
+<li><a href="hymns 2.html"><h4>2.GREAT IS THY FAITHFULNESS</h4></a></li>
+<li><a href="hymn 3.html"><h4>3.HOW GREAT THOU ART</h4></a></li>
+<li><a href="hymns 4.html"><h4>4.O WORSHIP THE KING</h4></a></li>
+<li><a href="hymns 5.html"><h4>5.HOLY HOLY HOLY </h4></a></li>
+<li><a href="hymns 6.html"><h4>6.OH FOR A THOUSAND TONGUES TO SING </h4></a></li>
+<li><a href="hymns 7.html"><h4>7.PRAISE HIM, PRAISE HIM</h4></a></li>
+<li><a href="hymns 8.html"><h4>8.PRAISE TO THE LORD, THE ALIMIGHTY </h4></a></li>
+<li><a href="hymns 9.html"><h4>9.BE GLAD IN THE LORD AND REJOICE </h4></a></li>
+<li><a href="hymns 10.html"><h4>10.PRAISE THE KING OF GLORY</h4></a></li>
+<li><a href="hymns 11.html"><h4>11.IMMORTAL INVISIBLE GOD ONLY WISE </h4></a></li>
+<li><a href="hymns 12.html"><h4>12 BLESSED BE THE NAME</h4></a></li>
+<li><h4><u>INVITATION TO REPENTANCE AND SALVATION<hr></h4></a></li>
+<li><a href="hymns 13.html"><h4>13 COME BELIEVING</h4></a></li>
+<li><a href="hymns 14.html"><h4>14 WHY DO YOU WAIT?</h4></a></li>
+<li><a href="hymns 15.html"><h4>15 LET JESUS COME INTO YOUR HEART</h4></a></li>
+<li><a href="hymns 16.html"><h4>16 SOFTLY AND TENDERLY JESUS IS CALLING</h4></a></li>
+<li><a href="hymns 17.html"><h4>17 CHRIST RECEIVETH SINFUL MEN</h4></a></li>
+<li><a href="hymns 18.html"><h4>18 COME YE SINNERS</h4></a></li>
+<li><a href="hymns 19.html"><h4>19 HAVE YOU BEEN TO JESUS</h4></a></li>
+<li><a href="hymns 20.html"><h4>20  COME, EVERY SOUL BY SIN OPPRESS</h4></a></li>
+<li><a href=""><h4>21 LOOK UNTO ME AND BE YE SAVED</h4></a></li>
+<li><a href=""><h4>22 YE MUST BE BORN AGAIN</h4></a></li>
+<li><a href=""><h4>23 OH COME TO THE FOUNTAIN OF CLEANSING</h4></a></li>
+<li><a href=""><h4>24 THERE IS POWER IN THE BLOOD</h4></a></li>
+<li><h4><u>RESPONSE, REPENTANCE & RESTORATION<hr></h4></a></li>
+<li><a href=""><h4>25 ROCK OF AGES </h4></a></li>
+<li><a href=""><h4>26 WONDERFUL GRACE OF JESUS</h4></a></li>
+<li><a href=""><h4>27 GRACE GREATER THAN OUR SIN</h4></a></li>
+<li><a href=""><h4>28 JUST AS I AM</h4></a></li>
+<li><a href=""><h4>29  OUT OF MY BONDAGE</h4></a></li>
+<li><a href=""><h4>30 I HEAR THY WELCOME VOICE (I AM COMING LORD) </h4></a></li>
+<li><a href=""><h4>31 IN TENDERNESS HE SOUGHT ME</h4></a></li>
+<li><a href=""><h4>32 I WAS A WANDERING SHEEP</h4></a></li>
+</ul>
+</div>
+
+<script>
+    document.getElementById('searchInput').addEventListener('input', function () {
+    let searchValue = this.value.toLowerCase();
+    let listItems = document.getElementById('myList').getElementsByTagName('li');
+
+    for (let i = 0; i < listItems.length; i++) {
+        let currentItem = listItems[i].textContent.toLowerCase();
+
+        if (currentItem.includes(searchValue)) {
+            listItems[i].style.display = 'list-item';
+        } else {
+            listItems[i].style.display = 'none';
+        }
+    }
+});
+
+// Add alphabetical sorting
+document.getElementById('myList').addEventListener('click', function () {
+    let list = this;
+    let items = list.children;
+    let itemsArray = [];
+
+    for (let i = 0; i < items.length; i++) {
+        itemsArray.push(items[i]);
+    }
+
+    itemsArray.sort(function (a, b) {
+        return a.textContent.localeCompare(b.textContent);
+    });
+
+    for (let i = 0; i < itemsArray.length; i++) {
+        list.appendChild(itemsArray[i]);
+    }
+});</script>
+</body>
+</html>

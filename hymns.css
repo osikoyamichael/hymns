@@ -1,0 +1,25 @@
+        body{
+            background-image: url(bak2.jpg);
+            font-size: large;
+            font-family: Helvetica;
+
+        }
+        h1{
+            color: navy;
+            font-weight:20em;
+        }
+        hr{
+            background-color: orange;
+            height: 5px;
+            border: none;
+        }
+        p{
+            border-style: groove;
+            border-color: orange;
+            background-color: navy;
+            color: white;
+            padding: 10px;
+            padding-right: 20px;
+            border-radius: 10%;
+            margin-top: -5px;
+        }

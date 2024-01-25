@@ -1,0 +1,44 @@
+*{
+    text-decoration: none;
+}
+img{
+    width: 80%;
+    margin-top: 60px;
+}
+body{
+    background-image: url('bak8.jpg');
+    background-size: auto;
+}
+h2{
+    color:white;
+    padding:10px;
+    background-color: navy;
+    border-radius: 10%;
+    font-size: 2em;
+    box-shadow: 0 5px grey;
+    border-style: groove;
+}
+h3{
+    padding: 10px;
+    background: navy;
+    color: white;
+    font-size: 2em;
+    box-shadow: 0 5px grey ;
+    margin-left: 40px;
+    border-radius: 10%;
+    border-style: groove;
+}
+ul li{
+    display: inline-block;
+
+
+}
+div{
+    background-color: navy;
+    color: white;
+    font-size: 2em;
+    border-radius:10%;
+    border-color: black;
+    border-style: groove;
+
+}
